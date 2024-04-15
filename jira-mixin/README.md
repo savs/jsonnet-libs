@@ -30,8 +30,8 @@ The Mixin comes with preconfigured Grafana dashboard. The dashboard looks like t
 To use the Mixin, you need to have mixtool and jsonnetfmt installed. If you have a working Go development environment, it's easiest to run the following:
 
 ```
-$ go get github.com/monitoring-mixins/mixtool/cmd/mixtool
-$ go get github.com/google/go-jsonnet/cmd/jsonnetfmt
+$ go install github.com/monitoring-mixins/mixtool/cmd/mixtool@main
+$ go install github.com/google/go-jsonnet/cmd/jsonnetfmt@latest
 ```
 
 You can then build the Prometheus rules files alerts.yaml and rules.yaml and a directory dashboard_out with the JSON dashboard files for Grafana:
